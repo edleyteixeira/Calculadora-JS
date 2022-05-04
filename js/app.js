@@ -46,3 +46,8 @@ function calcular(){
     
     return 
 }}
+
+function apagar(){
+    value = value.slice(0, -1)
+    document.getElementById('tela1').innerHTML = value
+}

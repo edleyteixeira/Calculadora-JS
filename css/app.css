@@ -12,7 +12,11 @@ main{width: 100%; margin: auto; margin-top: 30px; display: flex; justify-content
 .number{margin: 0; margin-top: 1.8%; margin-left: 1.4%;}
 .number button{width: 70px; height: 70px; border: none; background-color: #bbff00; font-size: 1.5em; cursor: pointer;}
 .number button:hover{background-color: #fff; font-weight: 700;}
-.ac{width: 218px!important;}
+.ac{width: 144px!important;}
+ion-icon {
+    font-size: 30px;
+    padding: 0;
+  }
 .zero{width: 144px!important;}
 .op{background-color: #ff9900!important;}
 .op:hover{ background-color: azure!important;}
