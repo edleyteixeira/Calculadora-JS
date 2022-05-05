@@ -1,7 +1,7 @@
 var value = ''
 var tela2 = '' 
 var total = ''
-const simbols = ['/', '*', '-', '+', ',']
+const simbols = ['/', '*', '-', '+', ',', '.']
 
 
 function calc(alg){
@@ -23,7 +23,7 @@ function calc(alg){
             }
         }
     }
-    document.getElementById('tela1').innerHTML = value
+    document.getElementById('tela1').innerHTML = value.replace('.',',').replace('.', ',')
     return (value)
 }
 
@@ -36,13 +36,12 @@ function zerar(){
 
 function calcular(){
     if (value != 0) {
-        
-    
     exp = value.replace(',', '.')
     total = eval(exp)
-    document.getElementById('tela1').innerHTML = total
-    document.getElementById('tela2').innerHTML = exp
-    value = String(total)
+    total = String(total)
+    document.getElementById('tela1').innerHTML = total.replace('.', ',')
+    document.getElementById('tela2').innerHTML = String(exp).replace('.', ',').replace('.', ',')
+    value = total
     
     return 
 }}
